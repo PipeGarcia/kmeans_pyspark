@@ -21,10 +21,10 @@ print(clusters.predict(tfidf).collect())
 print("")
 
 docsArray = docs.keys().collect()
-clustersArray = clusters.predict(tfidf).collect()
+centroidsArray = clusters.predict(tfidf).collect()
 for x in range(k):
     print "en el cluster " + str(x) +  " estan:"
-    for j in range(clustersArray.__len__()):
-        if clustersArray[j]==x:
+    for j in range(centroidsArray.__len__()):
+        if centroidsArray[j]==x:
             print docsArray[j]
     print("")
