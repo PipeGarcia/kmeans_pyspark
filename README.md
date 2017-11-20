@@ -37,6 +37,8 @@ Prerrequisitos:
 
 Tener instalado Python 3, Spark, y pyspark para ejecutar por línea de comandos.
 
+Clonar el repositorio y moverse a ese directorio para ejecutar.
+
 Para ejecutar localmente se puede ejecutar con la siguiente instrucción:
 
 ![](local.PNG)
