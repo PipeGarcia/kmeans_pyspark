@@ -23,7 +23,7 @@ Algoritmo que permite agrupar documentos similares en un número de *k* clusters
   
   # Desarrollo
 
-Por medio de **Tf-idf** se calcula el peso de cada una de las palabras que aparecen en los documentos del dataset, es decir, se omiten las palabras vacías (stop words) y se halla un valor numérico que indica la relevancia de las palabras dentro de los diferentes documentos. Una vez obtenido el resultado que contiene los valores de los pesos de estas palabras, se pasa a la función *k-means* proporcionada por [spark mlib](https://spark.apache.org/docs/2.1.1/mllib-clustering.html), la cual se encarga de agrupar en *k* clusters los documentos más similares entre sí.
+Por medio de **Tf-idf** se calcula el peso de cada una de las palabras que aparecen en los documentos del dataset, es decir, se omiten las palabras vacías (stop words) y se halla un valor numérico que indica la relevancia de las palabras dentro de los diferentes documentos. Una vez obtenido el resultado que contiene los valores de los pesos de estas palabras, se pasa a la función *k-means* proporcionada por [spark.mllib](https://spark.apache.org/docs/2.1.1/mllib-clustering.html), la cual se encarga de agrupar en *k* clusters los documentos más similares entre sí.
 
 # Ejecución
 
