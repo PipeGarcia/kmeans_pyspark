@@ -9,7 +9,7 @@ Realizado por:
 
 # Descripción
 
-Algoritmo que permite agrupar documentos similares en un número de *k* clusters. Ésto se realiza utilizando el algoritmo [k-means](https://es.wikipedia.org/wiki/K-means) con la ayuda de [Tf-idf](https://es.wikipedia.org/wiki/Tf-idf) que es una medida para clasificar un conjunto de documentos relacionados entre sí.
+Algoritmo que permite agrupar documentos similares en un número de *k* clusters. Ésto se realiza utilizando el algoritmo [k-means](https://es.wikipedia.org/wiki/K-means) con la ayuda de [Tf-idf](https://es.wikipedia.org/wiki/Tf-idf) que es una medida para clasificar documentos relacionados entre sí.
 
 # Recursos utilizados
 
@@ -23,17 +23,17 @@ Algoritmo que permite agrupar documentos similares en un número de *k* clusters
   
   # Desarrollo
 
-Por medio **Tf-idf** se calcula el peso de cada una de las palabras que aparecen en los documentos del dataset, es decir, se omiten las palabras vacías (stop words) y se halla un valor numérico que indica la relevancia de las palabras dentro de los diferentes documentos. Una vez obtenido el resultado que contiene los valores de los pesos de estas palabras, se pasa a la función de *k-means* proporcionada por [spark mlib](https://spark.apache.org/docs/2.1.1/mllib-clustering.html).
+Por medio **Tf-idf** se calcula el peso de cada una de las palabras que aparecen en los documentos del dataset, es decir, se omiten las palabras vacías (stop words) y se halla un valor numérico que indica la relevancia de las palabras dentro de los diferentes documentos. Una vez obtenido el resultado que contiene los valores de los pesos de estas palabras, se pasa a la función *k-means* proporcionada por [spark mlib](https://spark.apache.org/docs/2.1.1/mllib-clustering.html).
 
 # Ejecución
 
-Para ejecutar este algoritmo se puede utilizar en un cluster YARN, un notebook de Jupyter, un entorno de desarrollo como Pycharm Edu, entre otras alternativas.
+Para ejecutar este algoritmo se puede utilizar un cluster YARN, un notebook de Jupyter, un entorno de desarrollo como Pycharm Edu, entre otras alternativas.
 
 En nuestro caso utilizamos la primera opción:
 
 * Opción 1 - Cluster YARN
 
-* Prerrequisitos
+Prerrequisitos:
 
 Tener instalado Python 3, Spark, y pyspark para ejecutar por línea de comandos.
 
@@ -51,7 +51,7 @@ Crear un notebook con Python 3
 
 ![](jupyter1.PNG)
 
-Ejecutar el código que se encuentra en **kmeans.py** por medio del botón **Run** o con las teclas **shift** + **enter**
+Ejecutar el código **kmeans.py** por medio del botón **Run** o con las teclas **shift** + **enter**
 
 ![](jupyter2.PNG)
 
