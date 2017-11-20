@@ -63,6 +63,6 @@ Abrir el proyecto y ejecutar el archivo **kmeans.py**
 
 ![](pycharm.PNG)
 
-**Nota:** Independiente de cualquiera de las opciones utilizadas, la salida siempre deberá ser la misma.
+**Nota:** Independiente de cualquiera de las opciones utilizadas, el algoritmo siempre deberá funcionar correctamente.
 
 ![](resultados.PNG)
