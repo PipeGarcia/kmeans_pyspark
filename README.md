@@ -37,7 +37,7 @@ Prerrequisitos:
 
 Tener instalado Python 3, Spark, y pyspark para ejecutar por línea de comandos.
 
-Clonar el repositorio y moverse a ese directorio para ejecutar.
+Clonar el repositorio y moverse a ese directorio para ejecutar. Al clonar este repositorio, puede encontrar un dataset que contiene 461 documentos los cuales están en español. Debe tener en cuenta la ruta donde se encuentre el dataset, ya que ésta será la que se pase a la variable *docs*.
 
 Para ejecutar localmente se puede ejecutar con la siguiente instrucción:
 
