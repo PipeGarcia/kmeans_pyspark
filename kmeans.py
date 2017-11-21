@@ -23,8 +23,11 @@ print("")
 docsArray = docs.keys().collect()
 centroidsArray = clusters.predict(tfidf).collect()
 for x in range(k):
-    print "en el cluster " + str(x) +  " estan:"
+    print("en el cluster " + str(x) +  " estan:")
     for j in range(centroidsArray.__len__()):
         if centroidsArray[j]==x:
-            print docsArray[j]
+            print(docsArray[j])
     print("")
+
+clusters.save(sc, "/home/pipe/target/org/apache/spark/PythonKMeansExample/KMeansModel")
+sameModel = KMeansModel.load(sc, "/home/pipe/target/org/apache/spark/PythonKMeansExample/KMeansModel")
