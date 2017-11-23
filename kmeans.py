@@ -5,7 +5,7 @@ from pyspark.mllib.feature import HashingTF, IDF
 
 sc = SparkContext(appName="kmeans")
 
-docs = sc.wholeTextFiles("/home/pipe/dataset/gutenberg-txt-es/*.txt")
+docs = sc.wholeTextFiles("hdfs:///datasets/gutenberg-txt-es/*.txt")
 words = docs.values().map(lambda line: line.split(" "))
 
 hashingTF = HashingTF()
